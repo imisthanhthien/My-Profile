@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV - Lập trình viên Java</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.8;
+            margin: 0;
+            padding: 0;
+            background-color: #f3f4f6;
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1200px;
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+            background: white;
+            animation: slide-in 0.5s ease-out;
+        }
+
+        /* Animations */
+        @keyframes slide-in {
+            from {
+                transform: translateX(100%);
+            }
+            to {
+                transform: translateX(0);
+            }
+        }
+
+        .left-column {
+            background: #2c3e50;
+            color: white;
+            padding: 40px;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .left-column img {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 20px;
+            border: 4px solid white;
+            transition: transform 0.3s ease;
+        }
+
+        .left-column img:hover {
+            transform: scale(1.1);
+        }
+
+        h1 {
+            font-size: 2em;
+            margin: 10px 0;
+            transition: color 0.3s ease;
+        }
+
+        h1:hover {
+            color: #1abc9c;
+        }
+
+        h2 {
+            border-left: 5px solid white;
+            padding-left: 15px;
+            font-size: 1.5em;
+        }
+
+        .contact-info, .skills, .hobbies {
+            text-align: left;
+            margin-top: 30px;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+           
+        }
+
+        .right-column {
+            background: white;
+            padding: 40px;
+            overflow-y: auto;
+        }
+
+        .section {
+            margin-bottom: 30px;
+        }
+
+        .experience-item, .project-item {
+            margin-bottom: 20px;
+            transition: transform 0.3s ease;
+        }
+
+        .experience-item h3, .project-item h3 {
+            margin: 0 0 5px 0;
+            font-size: 1.3em;
+            color: #34495e;
+        }
+
+        .experience-item span, .project-item span {
+            font-style: italic;
+            color: #777;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .container {
+                grid-template-columns: 1fr;
+            }
+
+            .left-column, .right-column {
+                padding: 20px;
+            }
+
+            .skills-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        .uppercase {
+    text-transform: uppercase;
+  }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <!-- Cột trái -->
+        <div class="left-column">
+            <img  src="https://img.upanh.tv/2025/03/12/anhCV75c853fc280e0375.jpg" alt="anhCV75c853fc280e0375.jpg" title="Ảnh cá nhân" >
+            <h1>Nguyễn Thành Thiện</h1>
+            <p>LẬP TRÌNH VIÊN FULLSTACK</p>
+
+            <div class="contact-info">
+                <h2 class="uppercase">Thông tin liên hệ</h2>
+                <p><strong>Email:</strong> Chưa cập nhật</p>
+                <p><strong>Điện thoại:</strong> Chưa cập nhật</p>
+                <p><strong>Địa chỉ:</strong> Chưa cập nhật</p>
+            </div>
+
+            <div class="skills">
+                <h2 class="uppercase">Kỹ năng</h2>
+                <div class="skills-grid">
+                    <h4 class="uppercase">version control</h2>
+                    <p>- Git, Github</p>
+                    <h4 class="uppercase">database</h2>
+                        <p>- MySQL, SQLServer, MongoDB</p>
+                        <p>- Design database </p>
+
+                    <h4 class="uppercase">fontend</h2>
+                        <p>- HTML, CSS, Javascript</p>
+                        <p>- Bootstrap, TailwindCSS</p>
+                    <h4 class="uppercase">backend</h2>
+                        <p>- C#, Java, Docker</p>
+                        <p>- Basic knowledge about NodeJs, </p>
+                        <p>- NestJS, MVC</p>
+                </div>
+            </div>
+
+            <div class="hobbies">
+                <h2 class="uppercase">Sở thích</h2>
+               
+                <p>- Lập trình và phát triển phần mềm </p>
+                    <p>- Bóng đá, câu cá </p>
+               
+            </div>
+        </div>
+
+        <!-- Cột phải -->
+        <div class="right-column">
+            <section class="section">
+                <h2 class="uppercase">Mục tiêu nghề nghiệp</h2>
+                <p>Trở thành lập trình viên chuyên nghiệp vào năm 2027, chuyên sâu về Java, C# và phát triển các ứng dụng chất lượng cao.</p>
+            </section>
+
+            <section class="section">
+                <h2 class="uppercase">Học vấn</h2>
+                <div class="experience-item">
+                    <span>2020 - 2024</span>
+                    <p><strong>Cử nhân Công nghệ Thông tin</strong> - Đại học Công Thương TP.HCM(HUIT)</p>
+                    <p><strong>GPA:</strong> 3.0/4.0</p>
+                </div>
+               
+   
+               
+            </section>
+
+            <section class="section">
+                <h2 class="uppercase">Kinh nghiệm</h2>
+                <div class="experience-item">
+                    <h3>Project Team Leader - Dự án resort</h3>
+                    <span>2022 - 2023</span>
+                    <ul>
+                        <li><strong>Link dự án:</strong> <a href="https://github.com/NguyenNgocThien132/PhanMemQLDichVuResort" target="_blank" style="color: #3498db; text-decoration: none;">Xem dự án</a></li>
+                        <li><strong>Số lượng thành viên:</strong> 5 người</li>
+                        <li><strong>Vai trò:</strong> Project Team Leader</li>
+                        <li><strong>Công nghệ sử dụng:</strong> C#, ASP.NET Core, SQL Server</li>
+                        <li><strong>Mô tả chi tiết:</strong> Quản lý và điều phối nhóm phát triển, xây dựng kiến trúc hệ thống backend sử dụng C# và ASP.NET Core, tích hợp các dịch vụ, tạo API RESTful, triển khai ứng dụng với Docker để nâng cao tính khả dụng và hiệu suất. Đảm bảo tiến độ và chất lượng công việc trong suốt dự án.</li>
+                    </ul>
+                </div>
+
+                <div class="experience-item">
+                    <h3>Project Member - Youmed Cilic</h3>
+                    <span>2023 - 2024</span>
+                    <ul>
+                        <li><strong>Số lượng thành viên:</strong> 4 người</li>
+                        <li><strong>Vai trò:</strong> Project Member</li>
+                        <li><strong>Công nghệ sử dụng:</strong> C#, ASP.NET Core, SQL Server</li>
+                        <li><strong>Mô tả chi tiết:</strong> Tham gia thiết kế và phát triển các chức năng hệ thống theo yêu cầu của khách hàng. Hỗ trợ xây dựng backend sử dụng C# và ASP.NET Core, đồng thời làm việc với cơ sở dữ liệu SQL Server để lưu trữ và xử lý dữ liệu. Thực hiện kiểm thử và đảm bảo chất lượng cho các tính năng được phát triển.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="section">
+                <h2 class="uppercase">Dự án cá nhân</h2>
+                <div class="project-item">
+                    <h3>Web bán thức ăn cho mèo</h3>
+                    <strong >Link dự án:</strong> <a href="https://github.com/imisthanhthien/CATFOOD" target="_blank" style="color: #3498db; text-decoration: none;">Xem dự án</a> <br>
+
+                    <span>Phát triển, quản lý thức ăn dành cho mèo.</span>
+                    <p><strong>Mô tả:</strong> Dự án web cung cấp thức ăn chất lượng cho mèo, cho phép người dùng dễ dàng lựa chọn và mua sản phẩm trực tuyến với các gợi ý dựa trên thói quen ăn uống của mèo.</p>
+                    <p><strong>Xu hướng tương lai:</strong> Tích hợp hệ thống đăng ký thành viên, gợi ý cá nhân hóa, và áp dụng AI để phân tích thói quen ăn uống của mèo, nâng cao trải nghiệm người dùng và tăng trưởng doanh thu.</p>
+                </div>
+            </section>
+
+            <section class="section">
+                <h2 class="uppercase">Danh hiệu & Giải thưởng</h2>
+                <ul>
+                    <li>Tham gia và đạt giải nhì cuộc thi lập trình cấp khoa</li>
+                </ul>
+            </section>
+        </div>
+    </div>
+</body>
+
+</html>
